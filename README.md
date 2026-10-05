@@ -28,7 +28,7 @@ The repository URL is the submission link. A public live URL has not been config
 
 Vanilla HTML, CSS and JavaScript. One merged MP4 provides the complete visual timeline. JavaScript computes `scrollY / (pageHeight - viewportHeight)` and maps that value to the video's duration. It pauses normal playback and updates `currentTime`, using requestAnimationFrame and waiting for seeking to finish. The last target is slightly before the exact video end to avoid an empty terminal frame.
 
-The full video uses `preload="auto"` when motion is enabled. A JPEG poster appears while loading or if the video fails. System reduced-motion preferences initially select the static poster and avoid loading the MP4. Visitors can also select still-image mode manually. Text remains available without JavaScript. The landscape film uses cover cropping on small screens; a separate portrait film has not been generated.
+The full video uses `preload="auto"` when motion is enabled. A JPEG poster appears while loading or if the video fails. System reduced-motion preferences initially select still-image mode and avoid loading the MP4. Each of the four story sections displays its own garden image in this mode. Visitors can also select still-image mode manually. Text remains available without JavaScript. The landscape film uses cover cropping on small screens; a separate portrait film has not been generated.
 
 The page has four story sections, a scroll hint, a keyboard-accessible motion control, a skip link and an ending link to explore again.
 
@@ -36,7 +36,7 @@ The page has four story sections, a scroll hint, a keyboard-accessible motion co
 
 Images were produced with Codex image generation. Video clips were generated in Magnific using Kling 3.0, 1080p, 16:9 and supplied first/last images. An actual final frame of the preceding clip was extracted for the next start frame. The entrance and pond connector were tried before the remaining journey. The final clips were joined in Magnific Video Project Editor.
 
-The reference workflow's frame continuity and scroll-to-video approach were adapted to this project. Higgsfield/Monid generation calls were replaced with the Magnific browser workflow; no Higgsfield or Hermes was used. **Magnific MCP tool calls were not available in this session; generation was performed through the Magnific UI. This does not constitute completion of the assignment's MCP-specific requirement.**
+The reference workflow's frame continuity and scroll-to-video approach were adapted to this project. Higgsfield/Monid generation calls were replaced with the Magnific browser workflow; no Higgsfield or Hermes was used. **Magnific was connected to Codex through its plugin. However, its MCP generation tools were unavailable in this session, so the videos were generated through the Magnific web interface with Codex assistance. MCP generation has not been demonstrated.**
 
 The final film contains five generated clips, approximately 46 seconds: entrance, gate-to-pond connector, pond approach, pond-to-rose-walk travel, and rose-walk-to-villa travel. It presents four named locations, but a separate seven-clip production chain (four scene clips plus three connectors) has not been generated. See `docs/production.md` for the distinction.
 

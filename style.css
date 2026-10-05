@@ -27,3 +27,17 @@ button:hover, .replay:hover { background: #284535; }
   .controls { right: 12px; bottom: 12px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* Each story section has its own still image when camera motion is off. */
+.static-mode .background { display: none; }
+.static-mode .scene {
+  background-color: #14291f;
+  background-image: linear-gradient(90deg, rgba(0,0,0,.36), rgba(0,0,0,.08) 70%), var(--scene-image);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.scene:nth-child(1) { --scene-image: url('./assets/images/garden-poster.jpg'); }
+.scene:nth-child(2) { --scene-image: url('./assets/images/scene-02-pond.jpg'); }
+.scene:nth-child(3) { --scene-image: url('./assets/images/scene-03-rose-walk.jpg'); }
+.scene:nth-child(4) { --scene-image: url('./assets/images/scene-04-villa.jpg'); }
