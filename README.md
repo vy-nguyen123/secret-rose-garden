@@ -10,7 +10,8 @@ Open `index.html` in a browser, or use VS Code Live Server. No build step, packa
 
 ## Links
 
-The repository URL is the submission link. A public live URL has not been configured yet. When GitHub Pages is enabled, add its exact URL here.
+- GitHub repository: [secret-rose-garden](https://github.com/vy-nguyen123/secret-rose-garden)
+- Live website: [The Secret Rose Garden](https://vy-nguyen123.github.io/secret-rose-garden/)
 
 ## Concept and visual direction
 
