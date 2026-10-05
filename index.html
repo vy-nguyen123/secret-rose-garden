@@ -3,48 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Scroll through a secret rose garden, from an iron gate to a quiet pond and a forgotten villa.">
   <title>The Secret Rose Garden</title>
   <link rel="stylesheet" href="./style.css">
   <script src="./script.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#story">Skip to story</a>
   <div class="background" aria-hidden="true">
-    <video
-    id="garden-video"
-    src="./assets/videos/garden-full.mp4"
-    muted
-    playsinline
-    preload="auto"
-    ></video>
+    <video id="garden-video" data-src="./assets/videos/garden-full.mp4" poster="./assets/images/garden-poster.jpg" muted playsinline preload="auto"></video>
   </div>
-
   <header class="site-header">The Secret Rose Garden🥀</header>
-
-  <main>
-    <section class="scene">
+  <div class="controls"><button id="motion-toggle" type="button" aria-pressed="false">Use still image</button></div>
+  <p class="media-status" id="media-status" role="status"></p>
+  <main id="story">
+    <section class="scene" id="entrance" aria-labelledby="entrance-title">
       <p class="scene-number">01 / 04</p>
-      <h1>The Entrance</h1>
+      <h1 id="entrance-title">The Entrance</h1>
       <p>Beyond the gate, red roses lead you into a world left behind.</p>
       <p class="scroll-hint">Scroll to explore ↓</p>
     </section>
-
-    <section class="scene">
+    <section class="scene" aria-labelledby="pond-title">
       <p class="scene-number">02 / 04</p>
-      <h2>The Silent Pond</h2>
+      <h2 id="pond-title">The Silent Pond</h2>
       <p>Two swans drift quietly beside a woman lost in thought.</p>
     </section>
-
-    <section class="scene">
+    <section class="scene" aria-labelledby="rose-title">
       <p class="scene-number">03 / 04</p>
-      <h2>The Rose Walk</h2>
+      <h2 id="rose-title">The Rose Walk</h2>
       <p>Follow the fallen petals beneath the roses, toward a house beyond the leaves.</p>
     </section>
-
-    <section class="scene">
+    <section class="scene" aria-labelledby="villa-title">
       <p class="scene-number">04 / 04</p>
-      <h2>The Forgotten Villa</h2>
+      <h2 id="villa-title">The Forgotten Villa</h2>
       <p>Was this place forgotten, or was it waiting to be found?</p>
+      <a class="replay" href="#entrance">Explore again ↑</a>
     </section>
   </main>
+  <noscript><p class="media-status">JavaScript is off. Scroll to read the story over the still garden image.</p></noscript>
 </body>
 </html>
